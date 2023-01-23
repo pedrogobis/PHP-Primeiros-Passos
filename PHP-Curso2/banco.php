@@ -10,6 +10,9 @@ include 'clientes.php';
 $contasCorrentes['12344333455'] = sacar($contasCorrentes['12344333455'], 40);
 $contasCorrentes['12344333455'] = depositar($contasCorrentes['12344333455'], 324);
 
+
+titularMaiusculo($contasCorrentes['12344333455']);
+
 foreach($contasCorrentes as $cpf => $conta){
     exibeMenssagem("$cpf {$conta['Titualar']} {$conta['Saldo']} ");
 }
